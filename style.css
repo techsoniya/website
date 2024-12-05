@@ -1,0 +1,157 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f7f4f3; /* Light pastel background */
+    transition: background-color 0.3s, color 0.3s;
+}
+
+body.light-mode {
+    background-color: #f7f4f3;
+    color: #333;
+}
+
+body.dark-mode {
+    background-color: #2a2a2a;
+    color: #eaeaea;
+}
+
+.container {
+    background: #ffffff;
+    border: 2px solid #e4e4e4;
+    border-radius: 12px;
+    padding: 30px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+    width: 400px;
+    text-align: center;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+.container.dark-mode {
+    background: #3b3b3b;
+    border-color: #555;
+}
+
+h1 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #5a5a5a;
+    transition: color 0.3s;
+}
+
+.input-section {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+input {
+    flex: 1;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 14px;
+    background-color: #fefefe;
+    transition: border-color 0.3s;
+}
+
+input:focus {
+    border-color: #a3c9a8;
+    outline: none;
+}
+
+button {
+    padding: 12px;
+    font-size: 14px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    background-color: #92b4ec; /* Light blue pastel */
+    color: white;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #7791cc;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    background: #fefefe;
+    border: 1px solid #e4e4e4;
+    padding: 12px 16px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+li.dark-mode {
+    background: #4a4a4a;
+    border-color: #666;
+}
+
+li .task-completed {
+    text-decoration: line-through;
+    color: gray;
+}
+
+li .delete-button,
+li .edit-button {
+    background: #f76c6c; /* Pastel red */
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+li .delete-button:hover,
+li .edit-button:hover {
+    background: #d94e4e;
+}
+
+li .priority-dropdown {
+    padding: 6px 8px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    background: #f9f9f9;
+    transition: border-color 0.3s;
+}
+
+li .priority-dropdown:focus {
+    border-color: #92b4ec;
+}
+
+.theme-toggle {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    align-items: center;
+}
+
+.theme-toggle label {
+    font-size: 14px;
+    color: #5a5a5a;
+}
+
+.theme-toggle input {
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+}
